@@ -1,0 +1,59 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/07/06 18:14:59 by wyu               #+#    #+#              #
+#    Updated: 2022/07/12 19:35:45 by wyu              ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+CC		= gcc
+CFLAGS	= -Wall -Wextra -Werror
+AR		= ar rcs
+RM		= rm -rf
+
+NAME 	= push_swap
+
+LIBFT			= libft
+LIBFT_NAME		= libft.a
+PUSH_SWAP_LIBFT = push_swap.a
+
+SRC_LIST	= ft_error.c ft_clear.c ft_argv_split.c\
+				ft_arg_errorcheck.c ft_get_arr.c ft_get_frame.c\
+				ft_get_deq.c ft_get_dll.c ft_deq.c\
+				ft_get_sarr.c
+
+SRC_DIR 	= src
+
+SRCS		= $(addprefix $(SRC_DIR)/, $(SRC_LIST))
+OBJS		= $(SRC_LIST:.c=.o)
+
+.PHONY : all clean fclean re
+
+all : $(NAME)
+
+$(NAME) : $(PUSH_SWAP_LIBFT)
+		$(CC) $(CFLAGS) $(SRC_DIR)/push_swap.c -o $@ $<
+
+$(PUSH_SWAP_LIBFT) : $(OBJS) $(LIBFT)/$(LIBFT_NAME)
+		cp $(LIBFT)/$(LIBFT_NAME) $(PUSH_SWAP_LIBFT)
+		$(AR) $@ $(OBJS)
+
+$(LIBFT)/$(LIBFT_NAME) :
+		make all -C $(LIBFT)
+
+$(OBJS) : $(SRCS)
+		$(CC) $(CFLAGS) -c $^
+
+clean :
+		$(RM) $(OBJS) $(PUSH_SWAP_LIBFT)
+		make clean -C $(LIBFT)
+
+fclean : clean
+		$(RM) $(NAME)
+		make fclean -C $(LIBFT)
+
+re : clean all
