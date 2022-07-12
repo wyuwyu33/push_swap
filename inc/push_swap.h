@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 04:33:57 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 05:11:05 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/13 06:44:19 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,7 @@ typedef struct s_frame
     t_deq *deq_a;
     t_deq *deq_b;
     int max;
+    int sec_max;
     int mid;
     int min;
     int sort;
@@ -137,4 +138,5 @@ t_steps ft_find_min_step(t_frame *frame);
 
 // ft_steps_running.c
 void ft_steps_running(t_frame *frame, t_steps steps);
+
 #endif

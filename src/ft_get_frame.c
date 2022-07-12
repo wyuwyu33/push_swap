@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 01:49:38 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 04:11:42 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/13 06:44:51 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ t_frame *ft_get_frame(t_arr *arr, t_arr *sarr)
 	new_frame->min = sarr->val[0];
 	new_frame->mid = sarr->val[(int)(sarr->size / 2)];
 	new_frame->max = sarr->val[sarr->size - 1];
+	new_frame->sec_max = sarr->val[sarr->size - 2];
 	new_frame->sort = ft_arr_sortcheck(arr);
 	return (new_frame);
 }

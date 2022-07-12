@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 20:33:31 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 04:22:42 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/13 06:46:49 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,15 @@
 static
 void ft_init_deq_a(t_frame *frame)
 {
-	while (frame->deq_a->trailer->prev->data != frame->min ||\
-			frame->deq_a->trailer->prev->prev->data != frame->max)
-	{
-		if (frame->deq_a->header->next->data == frame->min)
-			ft_ra(frame);
-		else if (frame->deq_a->trailer->prev->data != frame->max &&\
-				frame->deq_a->trailer->prev->data != frame->min)
-			ft_rra(frame);
-		else
-			ft_sa(frame);
-	}
+	if (frame->deq_a->header->next->data == frame->min &&\
+		frame->deq_a->header->next->next->data == frame->max)
+		ft_sa(frame);
+	else if (frame->deq_a->trailer->prev->data == frame->max &&\
+			frame->deq_a->trailer->prev->prev->data == frame->min)
+		ft_sa(frame);
+	else if (frame->deq_a->header->next->data == frame->max &&\
+			frame->deq_a->trailer->prev->data == frame->min)
+		ft_sa(frame);
 }
 
 static
@@ -89,12 +87,12 @@ void ft_enter_in_order(t_frame *frame)
 	if (ft_find_min_rotate(frame) == 1)
 	{
 		while (frame->deq_a->header->next->data != frame->min)
-			ft_ra(frame);
+				ft_ra(frame);
 	}
 	else
 	{
 		while (frame->deq_a->header->next->data != frame->min)
-			ft_rra(frame);
+				ft_rra(frame);
 	}
 }
 
@@ -105,10 +103,13 @@ void ft_start_sort(t_frame *frame)
 	a_header = frame->deq_a->header;
 	while (frame->deq_a->size > 3)
 	{
-		if (a_header->next->data != frame->min && a_header->next->data != frame->max)
+		if (a_header->next->data != frame->min &&\
+				a_header->next->data != frame->max &&\
+				a_header->next->data != frame->sec_max)
 		{
 			ft_pb(frame);
-			if (frame->deq_b->header->next->data > frame->mid)
+			if (frame->deq_b->header->next->data > frame->mid &&\
+					frame->deq_b->size > 1)
 				ft_rb(frame);
 		}
 		else
