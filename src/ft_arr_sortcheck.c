@@ -1,29 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_get_frame.c                                     :+:      :+:    :+:   */
+/*   ft_arr_sortcheck.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/12 01:49:38 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 04:11:42 by wyu              ###   ########.fr       */
+/*   Created: 2022/07/12 20:30:53 by wyu               #+#    #+#             */
+/*   Updated: 2022/07/12 20:32:37 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-t_frame *ft_get_frame(t_arr *arr, t_arr *sarr)
+int ft_arr_sortcheck(t_arr *arr)
 {
-	t_frame *new_frame;
+	int i;
 
-	new_frame = (t_frame *)malloc(sizeof(t_frame));
-	if (!new_frame)
-		ft_allocation_error("ft_get_frame");
-	new_frame->deq_a = ft_get_deq_a(arr);
-	new_frame->deq_b = ft_get_deq_b();
-	new_frame->min = sarr->val[0];
-	new_frame->mid = sarr->val[(int)(sarr->size / 2)];
-	new_frame->max = sarr->val[sarr->size - 1];
-	new_frame->sort = ft_arr_sortcheck(arr);
-	return (new_frame);
+	i = -1;
+	while (++i < arr->size - 1)
+	{
+		if (arr->val[i] > arr->val[i + 1])
+			return (0);
+	}
+	return (1);
 }

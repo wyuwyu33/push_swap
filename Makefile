@@ -6,7 +6,7 @@
 #    By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 18:14:59 by wyu               #+#    #+#              #
-#    Updated: 2022/07/12 19:35:45 by wyu              ###   ########.fr        #
+#    Updated: 2022/07/13 03:39:00 by wyu              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,10 +21,13 @@ LIBFT			= libft
 LIBFT_NAME		= libft.a
 PUSH_SWAP_LIBFT = push_swap.a
 
-SRC_LIST	= ft_error.c ft_clear.c ft_argv_split.c\
-				ft_arg_errorcheck.c ft_get_arr.c ft_get_frame.c\
-				ft_get_deq.c ft_get_dll.c ft_deq.c\
-				ft_get_sarr.c
+SRC_LIST	= ft_error.c ft_clear.c ft_argv_split.c \
+				ft_arg_errorcheck.c ft_get_arr.c ft_get_frame.c \
+				ft_get_deq.c ft_get_dll.c ft_deq.c \
+				ft_get_sarr.c ft_arg_dupcheck.c ft_arr_sortcheck.c \
+				ft_start_sort.c ft_push.c ft_rotate.c \
+				ft_reverse_rotate.c ft_swap.c ft_find_min_step.c \
+				ft_steps_running.c
 
 SRC_DIR 	= src
 

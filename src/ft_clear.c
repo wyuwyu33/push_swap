@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 08:13:03 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 20:16:00 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/12 23:33:45 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,6 +35,35 @@ void ft_clear_arg(t_arg *arg)
 
 void ft_clear_arr(t_arr *arr)
 {
+	if (!arr)
+		return ;
 	free(arr->val);
 	free(arr);
+}
+
+void ft_clear_deq(t_deq *deq)
+{
+	t_dll *node;
+	t_dll *next;
+
+	if (!deq)
+		return ;	
+	node = deq->header;
+	while (node != deq->trailer)
+	{
+		next = node->next;
+		free(node);
+		node = next;
+	}
+	free(node);
+	free(deq);
+}
+
+void ft_clear_frame(t_frame *frame)
+{
+	if (!frame)
+		return ;
+	ft_clear_deq(frame->deq_a);
+	ft_clear_deq(frame->deq_b);
+	free(frame);
 }

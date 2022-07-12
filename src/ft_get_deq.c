@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 02:55:01 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 06:10:39 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/13 00:37:38 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ t_deq *ft_get_deq()
 	new_deq->trailer->prev = new_deq->header;
 	new_deq->trailer->data = 0;
 	new_deq->trailer->next = NULL;
+	new_deq->size = 0;
 	return (new_deq);
 }
 

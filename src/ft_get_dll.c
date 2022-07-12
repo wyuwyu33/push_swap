@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 03:00:27 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 03:03:03 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/12 21:21:21 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,9 @@ t_dll *ft_get_dll(int data)
 	if (!new_dll)
 		ft_allocation_error("ft_get_dll");
 	new_dll->data = data;
+	new_dll->prev = NULL;
+	new_dll->next = NULL;
+	new_dll->step = 0;
+	new_dll->rotate = 0;
 	return (new_dll);
 }
