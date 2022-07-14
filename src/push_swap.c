@@ -6,18 +6,18 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 04:36:35 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 07:40:43 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:21:55 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-int main(int argc, char **argv)
+int	main(int argc, char **argv)
 {
-	t_arg *arg;
-	t_arr *arr;
-	t_arr *sarr;
-	t_frame *frame;
+	t_arg	*arg;
+	t_arr	*arr;
+	t_arr	*sarr;
+	t_frame	*frame;
 
 	arg = ft_argv_split(argc, argv);
 	ft_arg_errorcheck(arg);

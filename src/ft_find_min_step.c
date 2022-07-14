@@ -6,16 +6,16 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 02:35:53 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 05:10:32 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 04:42:07 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
 static
-int ft_find_stuck(t_dll *pnode, t_dll *end_point, int min)
+int	ft_find_stuck(t_dll *pnode, t_dll *end_point, int min)
 {
-	int max;
+	int	max;
 
 	max = pnode->data;
 	while (pnode != end_point)
@@ -28,9 +28,9 @@ int ft_find_stuck(t_dll *pnode, t_dll *end_point, int min)
 }
 
 static
-t_steps ft_put_steps(t_dll *a, t_dll *b)
+t_steps	ft_put_steps(t_dll *a, t_dll *b)
 {
-	t_steps res;
+	t_steps	res;
 
 	res.a_step = 0;
 	res.a_rotate = 0;
@@ -48,11 +48,11 @@ t_steps ft_put_steps(t_dll *a, t_dll *b)
 }
 
 static
-t_steps ft_find_steps(t_deq *a, t_dll *dll_b)
+t_steps	ft_find_steps(t_deq *a, t_dll *dll_b)
 {
-	t_steps res;
-	t_dll *search_a;
-	int p_data;
+	t_steps	res;
+	t_dll	*search_a;
+	int		p_data;
 
 	search_a = a->header->next;
 	while (search_a != a->trailer)
@@ -75,12 +75,12 @@ t_steps ft_find_steps(t_deq *a, t_dll *dll_b)
 	return (res);
 }
 
-t_steps ft_find_min_step(t_frame *frame)
+t_steps	ft_find_min_step(t_frame *frame)
 {
-	t_dll *search_b;
-	t_steps steps;
-	t_steps tmp;
-	
+	t_dll	*search_b;
+	t_steps	steps;
+	t_steps	tmp;
+
 	search_b = frame->deq_b->header->next;
 	steps.total = frame->deq_a->size + frame->deq_b->size;
 	while (search_b != frame->deq_b->trailer)

@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 20:30:53 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 20:32:37 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/14 18:21:56 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-int ft_arr_sortcheck(t_arr *arr)
+int	ft_arr_sortcheck(t_arr *arr)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	while (++i < arr->size - 1)

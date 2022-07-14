@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 23:39:35 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 03:27:59 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:18:08 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-void ft_rra(t_frame *frame)
+void	ft_rra(t_frame *frame)
 {
-	t_dll *dll;
+	t_dll	*dll;
 
 	if (!frame)
 		return ;
@@ -23,9 +23,9 @@ void ft_rra(t_frame *frame)
 	write(1, "rra\n", 4);
 }
 
-void ft_rrb(t_frame *frame)
+void	ft_rrb(t_frame *frame)
 {
-	t_dll *dll;
+	t_dll	*dll;
 
 	if (!frame)
 		return ;
@@ -34,10 +34,10 @@ void ft_rrb(t_frame *frame)
 	write(1, "rrb\n", 4);
 }
 
-void ft_rrr(t_frame *frame)
+void	ft_rrr(t_frame *frame)
 {
-	t_dll *dll_a;
-	t_dll *dll_b;
+	t_dll	*dll_a;
+	t_dll	*dll_b;
 
 	if (!frame)
 		return ;

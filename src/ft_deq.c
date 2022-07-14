@@ -6,16 +6,16 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 03:06:42 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 06:06:48 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:10:23 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-void ft_add_front(t_deq *deq, t_dll *dll)
+void	ft_add_front(t_deq *deq, t_dll *dll)
 {
 	if (!deq || !dll)
-		return;
+		return ;
 	deq->header->next->prev = dll;
 	dll->next = deq->header->next;
 	deq->header->next = dll;
@@ -23,10 +23,10 @@ void ft_add_front(t_deq *deq, t_dll *dll)
 	deq->size++;
 }
 
-void ft_add_rear(t_deq *deq, t_dll *dll)
+void	ft_add_rear(t_deq *deq, t_dll *dll)
 {
 	if (!deq || !dll)
-		return;
+		return ;
 	deq->trailer->prev->next = dll;
 	dll->prev = deq->trailer->prev;
 	deq->trailer->prev = dll;
@@ -34,11 +34,11 @@ void ft_add_rear(t_deq *deq, t_dll *dll)
 	deq->size++;
 }
 
-t_dll *ft_remove_front(t_deq *deq)
+t_dll	*ft_remove_front(t_deq *deq)
 {
-	t_dll *remove_dll;
+	t_dll	*remove_dll;
 
-	if(!deq || !deq->size)
+	if (!deq || !deq->size)
 		return (NULL);
 	remove_dll = deq->header->next;
 	remove_dll->prev->next = remove_dll->next;
@@ -49,9 +49,9 @@ t_dll *ft_remove_front(t_deq *deq)
 	return (remove_dll);
 }
 
-t_dll *ft_remove_rear(t_deq *deq)
+t_dll	*ft_remove_rear(t_deq *deq)
 {
-	t_dll *remove_dll;
+	t_dll	*remove_dll;
 
 	if (!deq || !deq->size)
 		return (NULL);

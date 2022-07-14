@@ -6,16 +6,16 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 02:55:01 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 00:37:38 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:11:56 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
 static
-t_deq *ft_get_deq()
+t_deq	*ft_get_deq(void)
 {
-	t_deq *new_deq;
+	t_deq	*new_deq;
 
 	new_deq = (t_deq *)malloc(sizeof(t_deq));
 	if (!new_deq)
@@ -34,11 +34,11 @@ t_deq *ft_get_deq()
 	return (new_deq);
 }
 
-t_deq *ft_get_deq_a(t_arr *arr)
+t_deq	*ft_get_deq_a(t_arr *arr)
 {
-	t_deq *new_a;
-	t_dll *new_dll;
-	int i;
+	t_deq	*new_a;
+	t_dll	*new_dll;
+	int		i;
 
 	new_a = ft_get_deq();
 	i = -1;
@@ -50,9 +50,9 @@ t_deq *ft_get_deq_a(t_arr *arr)
 	return (new_a);
 }
 
-t_deq *ft_get_deq_b()
+t_deq	*ft_get_deq_b(void)
 {
-	t_deq *new_b;
+	t_deq	*new_b;
 
 	new_b = ft_get_deq();
 	return (new_b);

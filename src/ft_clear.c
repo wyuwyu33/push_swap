@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 08:13:03 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 23:33:45 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:10:36 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-void ft_clear_argv(char **argv)
+void	ft_clear_argv(char **argv)
 {
-	int i;
+	int	i;
 
 	if (!argv)
 		return ;
@@ -25,7 +25,7 @@ void ft_clear_argv(char **argv)
 	free(argv);
 }
 
-void ft_clear_arg(t_arg *arg)
+void	ft_clear_arg(t_arg *arg)
 {
 	if (!arg)
 		return ;
@@ -33,7 +33,7 @@ void ft_clear_arg(t_arg *arg)
 	free(arg);
 }
 
-void ft_clear_arr(t_arr *arr)
+void	ft_clear_arr(t_arr *arr)
 {
 	if (!arr)
 		return ;
@@ -41,13 +41,13 @@ void ft_clear_arr(t_arr *arr)
 	free(arr);
 }
 
-void ft_clear_deq(t_deq *deq)
+void	ft_clear_deq(t_deq *deq)
 {
-	t_dll *node;
-	t_dll *next;
+	t_dll	*node;
+	t_dll	*next;
 
 	if (!deq)
-		return ;	
+		return ;
 	node = deq->header;
 	while (node != deq->trailer)
 	{
@@ -59,7 +59,7 @@ void ft_clear_deq(t_deq *deq)
 	free(deq);
 }
 
-void ft_clear_frame(t_frame *frame)
+void	ft_clear_frame(t_frame *frame)
 {
 	if (!frame)
 		return ;

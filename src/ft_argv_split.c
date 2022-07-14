@@ -6,16 +6,16 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 05:02:32 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 02:51:08 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/14 18:01:20 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
 static
-char **ft_get_argv(int size)
+char	**ft_get_argv(int size)
 {
-	char **new_argv;
+	char	**new_argv;
 
 	new_argv = (char **)malloc(sizeof(char *) * size);
 	if (!new_argv)
@@ -25,9 +25,9 @@ char **ft_get_argv(int size)
 }
 
 static
-t_arg *ft_get_arg()
+t_arg	*ft_get_arg(void)
 {
-	t_arg *new_arg;
+	t_arg	*new_arg;
 
 	new_arg = (t_arg *)malloc(sizeof(t_arg));
 	if (!new_arg)
@@ -38,21 +38,21 @@ t_arg *ft_get_arg()
 }
 
 static
-void ft_argvcpy(char **dest_argv, char **src_argv)
+void	ft_argvcpy(char **dest_argv, char **src_argv)
 {
-	int i;
-	
+	int	i;
+
 	i = -1;
 	while (src_argv[++i])
 		dest_argv[i] = ft_strdup(src_argv[i]);
 }
 
 static
-char **ft_append_argv(char **dest_argv, char **src_argv)
+char	**ft_append_argv(char **dest_argv, char **src_argv)
 {
-	int dest_i;
-	int src_i;
-	char **new_argv;
+	int		dest_i;
+	int		src_i;
+	char	**new_argv;
 
 	dest_i = -1;
 	while (dest_argv[++dest_i])
@@ -69,11 +69,11 @@ char **ft_append_argv(char **dest_argv, char **src_argv)
 	return (new_argv);
 }
 
-t_arg *ft_argv_split(int argc, char **argv)
+t_arg	*ft_argv_split(int argc, char **argv)
 {
-	t_arg *res;
-	int i;
-	char **separator;
+	t_arg	*res;
+	int		i;
+	char	**separator;
 
 	res = ft_get_arg();
 	i = 0;

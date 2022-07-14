@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 03:00:27 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 21:21:21 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:15:47 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-t_dll *ft_get_dll(int data)
+t_dll	*ft_get_dll(int data)
 {
-	t_dll *new_dll;
+	t_dll	*new_dll;
 
 	new_dll = (t_dll *)malloc(sizeof(t_dll));
 	if (!new_dll)

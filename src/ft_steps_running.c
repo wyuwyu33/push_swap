@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 03:21:01 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 05:09:28 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:20:36 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-void ft_steps_running(t_frame *frame, t_steps steps)
+void	ft_steps_running(t_frame *frame, t_steps steps)
 {
-	while (steps.a_rotate == steps.b_rotate &&\
+	while (steps.a_rotate == steps.b_rotate && \
 			steps.a_step && steps.b_step)
 	{
 		if (steps.a_rotate == 1)

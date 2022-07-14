@@ -6,23 +6,24 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 06:14:34 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/12 19:36:32 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:16:41 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
 static
-void ft_merge_sarr(int *val, int *tmp, int left, int mid, int right)
+void	ft_merge_sarr(int *val, int *tmp, int left, int right)
 {
-	int ldx;
-	int rdx;
-	int tdx;
+	int	mid;
+	int	ldx;
+	int	rdx;
+	int	tdx;
 
+	mid = (left + right) / 2;
 	ldx = left;
 	rdx = mid + 1;
 	tdx = left;
-
 	while (ldx <= mid && rdx <= right)
 	{
 		if (val[ldx] <= val[rdx])
@@ -38,22 +39,22 @@ void ft_merge_sarr(int *val, int *tmp, int left, int mid, int right)
 }
 
 static
-void ft_merge_sarr_rec(int *val, int *tmp, int left, int right)
+void	ft_merge_sarr_rec(int *val, int *tmp, int left, int right)
 {
-	int mid;
+	int	mid;
 
 	if (left == right)
 		return ;
 	mid = (left + right) / 2;
 	ft_merge_sarr_rec(val, tmp, left, mid);
 	ft_merge_sarr_rec(val, tmp, mid + 1, right);
-	ft_merge_sarr(val, tmp, left, mid, right);
+	ft_merge_sarr(val, tmp, left, right);
 }
 
 static
-void ft_sort_sarr(t_arr *sarr)
+void	ft_sort_sarr(t_arr *sarr)
 {
-	int *tmp;
+	int	*tmp;
 
 	if (sarr->size < 2)
 		return ;
@@ -65,9 +66,9 @@ void ft_sort_sarr(t_arr *sarr)
 }
 
 static
-void ft_init_sarr(t_arr *sarr, t_arr *arr)
+void	ft_init_sarr(t_arr *sarr, t_arr *arr)
 {
-	int i;
+	int	i;
 
 	i = -1;
 	while (++i < arr->size)
@@ -75,9 +76,9 @@ void ft_init_sarr(t_arr *sarr, t_arr *arr)
 	sarr->size = arr->size;
 }
 
-t_arr *ft_get_sarr(t_arr *arr)
+t_arr	*ft_get_sarr(t_arr *arr)
 {
-	t_arr *new_sarr;
+	t_arr	*new_sarr;
 
 	new_sarr = (t_arr *)malloc(sizeof(t_arr));
 	if (!new_sarr)

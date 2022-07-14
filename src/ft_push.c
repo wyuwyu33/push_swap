@@ -6,15 +6,15 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/12 21:51:15 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/13 00:04:03 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 05:17:09 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-void ft_pa(t_frame *frame)
+void	ft_pa(t_frame *frame)
 {
-	t_dll *dll;
+	t_dll	*dll;
 
 	if (!frame)
 		return ;
@@ -23,9 +23,9 @@ void ft_pa(t_frame *frame)
 	write(1, "pa\n", 3);
 }
 
-void ft_pb(t_frame *frame)
+void	ft_pb(t_frame *frame)
 {
-	t_dll *dll;
+	t_dll	*dll;
 
 	if (!frame)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 21:52:16 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/11 22:39:05 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/14 18:00:06 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,11 @@ int	ft_isspace(int c)
 }
 
 static
-void ft_range_check(const char *s)
+void	ft_range_check(const char *s)
 {
-	long long nbr;
-	long long sign;
-	size_t i;
+	long long	nbr;
+	long long	sign;
+	size_t		i;
 
 	i = 0;
 	while (s[i] && ft_isspace(s[i]))
@@ -50,9 +50,9 @@ void ft_range_check(const char *s)
 }
 
 static
-void ft_validvalue_check(char *s)
+void	ft_validvalue_check(char *s)
 {
-	int i;
+	int	i;
 
 	if (*s == '+' || *s == '-')
 		s++;
@@ -63,9 +63,9 @@ void ft_validvalue_check(char *s)
 		ft_arg_error();
 }
 
-void ft_arg_errorcheck(t_arg *arg)
+void	ft_arg_errorcheck(t_arg *arg)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (++i < arg->argc)
