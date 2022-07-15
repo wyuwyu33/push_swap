@@ -6,21 +6,11 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 21:52:16 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/14 18:00:06 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/15 22:16:20 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
-
-static
-int	ft_isspace(int c)
-{
-	if (c == ' ' || c == '\t' || \
-	c == '\n' || c == '\v' || \
-	c == '\f' || c == '\r')
-		return (1);
-	return (0);
-}
 
 static
 void	ft_range_check(const char *s)
@@ -30,8 +20,6 @@ void	ft_range_check(const char *s)
 	size_t		i;
 
 	i = 0;
-	while (s[i] && ft_isspace(s[i]))
-		i++;
 	sign = 1;
 	if (s[i] == '+' || s[i] == '-')
 	{
@@ -67,7 +55,7 @@ void	ft_arg_errorcheck(t_arg *arg)
 {
 	int	i;
 
-	i = 0;
+	i = -1;
 	while (++i < arg->argc)
 	{
 		ft_validvalue_check(arg->argv[i]);
