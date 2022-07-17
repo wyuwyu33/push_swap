@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 21:52:16 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/17 14:12:35 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/17 14:33:25 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void	ft_validvalue_check(char *s)
 void	ft_arg_errorcheck(t_arg *arg)
 {
 	int	i;
-	
+
 	i = -1;
 	while (++i < arg->argc)
 	{
