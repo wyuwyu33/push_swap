@@ -1,36 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push_swap.c                                        :+:      :+:    :+:   */
+/*   ft_argv_check.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/11 04:36:35 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/17 14:22:12 by wyu              ###   ########.fr       */
+/*   Created: 2022/07/17 14:22:20 by wyu               #+#    #+#             */
+/*   Updated: 2022/07/17 14:31:47 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/push_swap.h"
 
-int	main(int argc, char **argv)
+static
+void	ft_emptyspace_check(char *s)
 {
-	t_arg	*arg;
-	t_arr	*arr;
-	t_arr	*sarr;
-	t_frame	*frame;
+	int	i;
+	int	s_len;
 
-	ft_argv_check(argc, argv);
-	arg = ft_argv_split(argc, argv);
-	ft_arg_errorcheck(arg);
-	arr = ft_get_arr(arg);
-	ft_clear_arg(arg);
-	sarr = ft_get_sarr(arr);
-	ft_arg_dupcheck(sarr);
-	frame = ft_get_frame(arr, sarr);
-	ft_clear_arr(arr);
-	ft_clear_arr(sarr);
-	if (!frame->sort)
-		ft_start_sort(frame);
-	ft_clear_frame(frame);
-	return (0);
+	i = -1;
+	s_len = (int)ft_strlen(s);
+	while (++i < s_len)
+	{
+		if (s[i] != ' ')
+			return ;
+	}
+	ft_arg_error();
+}
+
+void	ft_argv_check(int argc, char **argv)
+{
+	int		i;
+	char	*s_check;
+
+	i = 0;
+	while (++i < argc)
+	{
+		s_check = argv[i];
+		ft_emptyspace_check(s_check);
+	}
 }

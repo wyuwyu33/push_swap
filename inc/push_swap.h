@@ -6,7 +6,7 @@
 /*   By: wyu <wyu@student.42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 04:33:57 by wyu               #+#    #+#             */
-/*   Updated: 2022/07/15 22:16:27 by wyu              ###   ########.fr       */
+/*   Updated: 2022/07/17 14:29:06 by wyu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -137,5 +137,8 @@ t_steps	ft_find_min_step(t_frame *frame);
 
 // ft_steps_running.c
 void	ft_steps_running(t_frame *frame, t_steps steps);
+
+// ft_argv_check.c
+void	ft_argv_check(int argc, char **argv);
 
 #endif

@@ -1,0 +1,664 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.81
+# Copyright (C) 2006  Free Software Foundation, Inc.
+# This is free software; see the source for copying conditions.
+# There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+# PARTICULAR PURPOSE.
+
+# This program built for i386-apple-darwin11.3.0
+ 
+
+# Make data base, printed on Sun Jul 17 14:23:28 2022
+
+# Variables
+
+# automatic
+ 
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# automatic
+@F = $(notdir $@)
+# makefile
+CURDIR := /Users/wyu/Desktop/push_swap
+# makefile
+SHELL = /bin/sh
+# makefile (from `Makefile', line 16)
+RM = rm -rf
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ko","availableLanguages":{"*":"ko"},"_languagePackId":"2dff5cff996ed6cbe8d8aa8740f86aa0.ko","_translationsConfigFile":"/Users/wyu/Library/Application Support/Code/clp/2dff5cff996ed6cbe8d8aa8740f86aa0.ko/tcf.json","_cacheRoot":"/Users/wyu/Library/Application Support/Code/clp/2dff5cff996ed6cbe8d8aa8740f86aa0.ko","_resolvedLanguagePackCoreLocation":"/Users/wyu/Library/Application Support/Code/clp/2dff5cff996ed6cbe8d8aa8740f86aa0.ko/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a","_corruptedFile":"/Users/wyu/Library/Application Support/Code/clp/2dff5cff996ed6cbe8d8aa8740f86aa0.ko/corrupted.info","_languagePackSupport":true}
+# environment
+_ = /usr/bin/make
+# makefile (from `Makefile', line 14)
+CFLAGS = -Wall -Wextra -Werror
+# makefile (from `Makefile', line 21)
+LIBFT_NAME = libft.a
+# makefile (from `Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+__CFBundleIdentifier = com.microsoft.VSCode
+# environment
+INFOPATH = /opt/homebrew/share/info:
+# environment
+P9K_SSH = 0
+# environment
+VSCODE_CWD = /
+# environment
+PATH = /opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
+# makefile (from `Makefile', line 15)
+AR = ar rcs
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
+# environment
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.37sJsxftnn/Listeners
+# automatic
+%F = $(notdir $%)
+# makefile (from `Makefile', line 35)
+OBJS = $(SRC_LIST:.c=.o)
+# environment
+PWD = /Users/wyu/Desktop/push_swap
+# environment
+HOMEBREW_CELLAR = /opt/homebrew/Cellar
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+MANPATH = /opt/homebrew/share/man::
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /Users/wyu
+# default
+MAKEFILEPATH = $(shell /usr/bin/xcode-select -print-path 2>/dev/null || echo /Developer)/Makefiles
+# environment
+VSCODE_CODE_CACHE_PATH = /Users/wyu/Library/Application Support/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+LOGNAME = wyu
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+ZSH = /Users/wyu/.oh-my-zsh
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+XPC_FLAGS = 0x0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from `Makefile', line 34)
+SRCS = $(addprefix $(SRC_DIR)/, $(SRC_LIST))
+# environment
+SHLVL = 1
+# makefile (from `Makefile', line 20)
+LIBFT = libft
+# makefile (from `Makefile', line 13)
+CC = gcc
+# default
+MAKE_VERSION := 3.81
+# environment
+USER = wyu
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from `Makefile', line 18)
+NAME = push_swap
+# environment
+LESS = -R
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := /Library/Developer/CommandLineTools/usr/bin/make
+# default
+.VARIABLES := 
+# environment
+TMPDIR = /var/folders/rv/7tclmq451lz_cmtvqhkn74s40000gn/T/
+# automatic
+*F = $(notdir $*)
+# environment
+VSCODE_IPC_HOOK = /Users/wyu/Library/Application Support/Code/1.69.1-main.sock
+# environment
+MallocNanoZone = 0
+# makefile
+MAKEFLAGS = Rrqp
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.1750563.1750569
+# environment
+HOMEBREW_PREFIX = /opt/homebrew
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
+# environment
+HOMEBREW_REPOSITORY = /opt/homebrew
+# environment
+ 
+__CF_USER_TEXT_ENCODING = 0x1F5:0x3:0x33
+# environment
+COMMAND_MODE = unix2003
+# default
+MAKEFILES := 
+# makefile (from `Makefile', line 32)
+SRC_DIR = src
+# automatic
+<F = $(notdir $<)
+# environment
+PAGER = less
+# makefile (from `Makefile', line 22)
+PUSH_SWAP_LIBFT = push_swap.a
+# environment
+LC_ALL = C
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# makefile (from `Makefile', line 24)
+SRC_LIST = ft_error.c ft_clear.c ft_argv_split.c ft_arg_errorcheck.c ft_get_arr.c ft_get_frame.c ft_get_deq.c ft_get_dll.c ft_deq.c ft_get_sarr.c ft_arg_dupcheck.c ft_arr_sortcheck.c ft_start_sort.c ft_push.c ft_rotate.c ft_reverse_rotate.c ft_swap.c ft_find_min_step.c ft_steps_running.c ft_argv_check.c
+# environment
+MAKELEVEL := 0
+# environment
+LANG = C
+# environment
+VSCODE_PID = 21992
+# variable set hash-table stats:
+# Load=79/1024=8%, Rehash=0, Collisions=7/121=6%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 16777229, inode 1802784): 10 files, no impossibilities.
+
+# 10 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+src/ft_get_arr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_clear.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_arg_errorcheck.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 14:12:35
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_argv_split.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+all: push_swap
+#  Phony target (prerequisite of .PHONY).
+#  Command-line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+# Not a target:
+src/ft_argv_check.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 14:22:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_find_min_step.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+.PHONY: all clean fclean re
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ft_deq.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_swap.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+src/ft_steps_running.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_get_sarr.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_rotate.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_get_deq.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+src/ft_start_sort.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 14:23:27
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_get_frame.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_arr_sortcheck.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_get_arr.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_clear.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_arg_errorcheck.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+libft/libft.a:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 49):
+	make all -C $(LIBFT)
+	
+
+ft_argv_split.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 59):
+	$(RM) $(NAME)
+	make fclean -C $(LIBFT)
+	
+
+# Not a target:
+src/ft_get_dll.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_argv_check.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_deq.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_steps_running.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+src/ft_arg_dupcheck.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_error.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_push.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_start_sort.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/ft_reverse_rotate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+ 
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+re: clean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 55):
+	$(RM) $(OBJS) $(PUSH_SWAP_LIBFT)
+	make clean -C $(LIBFT)
+	
+
+push_swap: push_swap.a
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 42):
+	$(CC) $(CFLAGS) $(SRC_DIR)/push_swap.c -o $@ $<
+	
+
+# Not a target:
+src/ft_find_min_step.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_swap.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_get_sarr.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+push_swap.a: ft_error.o ft_clear.o ft_argv_split.o ft_arg_errorcheck.o ft_get_arr.o ft_get_frame.o ft_get_deq.o ft_get_dll.o ft_deq.o ft_get_sarr.o ft_arg_dupcheck.o ft_arr_sortcheck.o ft_start_sort.o ft_push.o ft_rotate.o ft_reverse_rotate.o ft_swap.o ft_find_min_step.o ft_steps_running.o ft_argv_check.o libft/libft.a
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+#  commands to execute (from `Makefile', line 45):
+	cp $(LIBFT)/$(LIBFT_NAME) $(PUSH_SWAP_LIBFT)
+	$(AR) $@ $(OBJS)
+	
+
+# Not a target:
+src/ft_rotate.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# Not a target:
+src/ft_get_deq.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_get_dll.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_arg_dupcheck.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_error.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: `'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := ft_error.o
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+# automatic
+# | := 
+# automatic
+# < := src/ft_error.c
+# automatic
+# ^ := src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+# automatic
+# ? := src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/13=8%
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+ft_push.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+src/ft_get_frame.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+ft_reverse_rotate.o: src/ft_error.c src/ft_clear.c src/ft_argv_split.c src/ft_arg_errorcheck.c src/ft_get_arr.c src/ft_get_frame.c src/ft_get_deq.c src/ft_get_dll.c src/ft_deq.c src/ft_get_sarr.c src/ft_arg_dupcheck.c src/ft_arr_sortcheck.c src/ft_start_sort.c src/ft_push.c src/ft_rotate.c src/ft_reverse_rotate.c src/ft_swap.c src/ft_find_min_step.c src/ft_steps_running.c src/ft_argv_check.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  commands to execute (from `Makefile', line 52):
+	$(CC) $(CFLAGS) -c $^
+	
+
+# Not a target:
+src/ft_arr_sortcheck.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-17 13:55:51
+#  File has been updated.
+#  Successfully updated.
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/0=0%
+
+# files hash-table stats:
+# Load=51/1024=5%, Rehash=0, Collisions=2/495=0%
+# VPATH Search Paths
+
+# No `vpath' search paths.
+
+# No general (`VPATH' variable) search path.
+
+# # of strings in strcache: 1
+# # of strcache buffers: 1
+# strcache size: total = 4096 / max = 4096 / min = 4096 / avg = 4096
+# strcache free: total = 4087 / max = 4087 / min = 4087 / avg = 4087
+
+# Finished Make data base on Sun Jul 17 14:23:28 2022
+
+ 
